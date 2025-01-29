@@ -36,8 +36,8 @@ Before running the project, make sure you have:
 1. Open the project in **IntelliJ IDEA** (or your preferred IDE).
 2. Navigate to the `CustomAnnotationApplication.java` class.
 3. Click **Run** ▶️ OR use the shortcut:
-   - **Mac**: `Cmd + Shift + F10`
-   - **Windows/Linux**: `Ctrl + Shift + F10`
+
+
 
 ### **Option 2: Using Maven (Terminal)**
 
@@ -129,5 +129,3 @@ If you don’t send a token, you should get:
 
 ✅ **This confirms that the JWT authentication and custom annotation are working.**
 
-
-  
