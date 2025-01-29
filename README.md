@@ -129,29 +129,5 @@ If you don’t send a token, you should get:
 
 ✅ **This confirms that the JWT authentication and custom annotation are working.**
 
----
-
-## 🔹 5️⃣ Debugging Common Issues
-
-| Issue                      | Solution |
-|----------------------------|----------|
-| `Cannot connect to H2 Database` | Check if H2 Console is enabled in `application.properties`. |
-| `Invalid username or password` | Ensure your `data.sql` file contains test users. |
-| `JWT Token Expired` | Restart the server or generate a new token using `/login`. |
-| `401 Unauthorized` | Ensure you send `Authorization: Bearer <token>` in headers. |
-
----
-
-## 🎯 Next Steps
-
-1. **Try adding more roles (e.g., ROLE_USER, ROLE_ADMIN) and restrict API access.**
-2. **Secure different endpoints using Spring Security roles.**
-3. **Integrate with a frontend (React, Angular, etc.).**
-4. **Deploy the application (AWS, Docker, Kubernetes).**
-
----
-
-🔥 **Your authentication system with custom annotation is now fully functional!** Let me know if you run into any issues! 🚀
-
 
   
