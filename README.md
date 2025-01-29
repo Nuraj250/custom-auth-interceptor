@@ -35,7 +35,11 @@ Before running the project, make sure you have:
 
 1. Open the project in **IntelliJ IDEA** (or your preferred IDE).
 2. Navigate to the `CustomAnnotationApplication.java` class.
-3. Click **Run** ▶️ OR use the shortcut:
+3. Click Run ▶️ OR use the shortcut:
+
+Mac: Cmd + Shift + F10
+
+Windows/Linux: Ctrl + Shift + F10
 
 
 
