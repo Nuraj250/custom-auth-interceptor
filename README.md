@@ -36,8 +36,8 @@ Before running the project, make sure you have:
 1. Open the project in **IntelliJ IDEA** (or your preferred IDE).
 2. Navigate to the `CustomAnnotationApplication.java` class.
 3. Click **Run** ▶️ OR use the shortcut:
-    - **Mac**: `Cmd + Shift + F10`
-    - **Windows/Linux**: `Ctrl + Shift + F10`
+
+
 
 ### **Option 2: Using Maven (Terminal)**
 
@@ -129,18 +129,3 @@ If you don’t send a token, you should get:
 
 ✅ **This confirms that the JWT authentication and custom annotation are working.**
 
----
-
-## 🔹 5️⃣ Debugging Common Issues
-
-| Issue                      | Solution |
-|----------------------------|----------|
-| `Cannot connect to H2 Database` | Check if H2 Console is enabled in `application.properties`. |
-| `Invalid username or password` | Ensure your `data.sql` file contains test users. |
-| `JWT Token Expired` | Restart the server or generate a new token using `/login`. |
-| `401 Unauthorized` | Ensure you send `Authorization: Bearer <token>` in headers. |
-
----
-
-
-                        
