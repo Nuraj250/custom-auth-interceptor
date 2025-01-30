@@ -2,6 +2,7 @@ package com.example.custom_annotaion.service;
 
 import com.example.custom_annotaion.dto.LoginRequest;
 import com.example.custom_annotaion.dto.LoginResponse;
+import com.example.custom_annotaion.exception.*;
 import com.example.custom_annotaion.model.User;
 import com.example.custom_annotaion.repository.UserRepository;
 import com.example.custom_annotaion.util.JwtUtil;
@@ -21,10 +22,10 @@ public class AuthService {
 
     public LoginResponse login(LoginRequest loginRequest) {
         User user = userRepository.findByUsername(loginRequest.getUsername())
-                .orElseThrow(() -> new RuntimeException("Invalid username or password"));
+                .orElseThrow(() -> new UserNotFoundException("User not found: " + loginRequest.getUsername()));
 
         if (!passwordEncoder.matches(loginRequest.getPassword(), user.getPassword())) {
-            throw new RuntimeException("Invalid username or password");
+            throw new UserNotFoundException("Invalid credentials for user: " + loginRequest.getUsername());
         }
 
         String token = jwtUtil.generateToken(user.getUsername(), List.of(user.getRoles().split(",")));

@@ -1,8 +1,8 @@
 package com.example.custom_annotaion.util;
 
 import io.jsonwebtoken.*;
-import lombok.*;
 import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Value;
 
 import java.util.*;
 import java.util.function.Function;

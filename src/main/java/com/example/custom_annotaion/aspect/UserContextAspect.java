@@ -22,7 +22,7 @@ public class UserContextAspect {
         if (token != null && token.startsWith("Bearer ")) {
             String jwt = token.substring(7);
             userContext.setUsername(jwtUtil.extractUsername(jwt));
-            userContext.setRoles(jwtUtil.extractRoles(jwt));
+            userContext.setRoles(String.valueOf(jwtUtil.extractRoles(jwt)));
         }
     }
 }
